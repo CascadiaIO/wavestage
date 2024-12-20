@@ -1,5 +1,6 @@
 /** @format */
 
+import DateNextStream from "@/components/date-next-stream";
 import { TwitchButton } from "@/components/twitch-button";
 import WavestageHeader from "@/components/wavestage-header";
 import { cn } from "@/lib/utils";
@@ -16,11 +17,7 @@ export default function Home() {
       <section className="mb-12 w-full text-center">
         <div className="mx-auto w-1/2">
           <h2 className="text-2xl md:text-3xl font-bold mb-2">NEXT STREAM</h2>
-          <p className="text-xl md:text-2xl mb-6">
-            Saturday, December 28th
-            <br />
-            7:00 PM EST
-          </p>
+          <DateNextStream />
           <div className="flex justify-center">
             <TwitchButton />
           </div>
