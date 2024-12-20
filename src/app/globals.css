@@ -1,21 +1,82 @@
+/** @format */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: 248 91% 3%; /* #02010A Blackish */
+    --foreground: 185 100% 76%; /* #87F6FF */
+    --card: 185 100% 76%;
+    --card-foreground: 247 82% 2%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 195°, 83%, 38%; /* #118AB2 Dark blue */
+    --primary-foreground: 0 0% 98%;
+    --secondary: 187 100% 75%; /* #87F6FF Light blue */
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 185 100% 76%; /* #87F6FF */
+    --accent: 43 100% 67%; /* #FFD166 Yellow */
+    --accent-foreground: 185 100% 76%; /* #87F6FF */
+    --destructive: 347 84% 61%; /* #EF476F Pink */
+    --destructive-foreground: 185 100% 76%; /* #87F6FF */
+    --border: 201 100% 36%;
+    --input: 240 5.9% 90%;
+    --ring: 240 10% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Variable.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Eurostile";
+  src: url("/fonts/Eurostile-Extd-black.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+.wavestage-header {
+  font-family: "Eurostile", sans-serif;
+  font-weight: bold;
+  @apply text-[#A2D729];
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.borderDevRed {
+  @apply border border-red-700;
+}
+
+.borderDevBlue {
+  @apply border border-blue-700;
+}
+
+.borderDevGreen {
+  @apply border border-green-700;
+}
+
+.borderDevYellow {
+  @apply border border-yellow-700;
 }
