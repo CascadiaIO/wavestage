@@ -32,7 +32,7 @@ export default function Home() {
               width="100%"
               height="100%"
               // src="https://www.youtube.com/embed/12FRLGxYXyk"
-              src="https://youtu.be/o0O1Rdx7Rbk"
+              src="https://www.youtube.com/watch?v=o0O1Rdx7Rbk"
               title="WaveStage Sample Video"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen></iframe>
