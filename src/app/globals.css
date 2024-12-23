@@ -44,7 +44,7 @@
 
 @font-face {
   font-family: "Eurostile";
-  src: url("/fonts/Eurostile-Extd-black.ttf") format("truetype");
+  src: url("/fonts/Eurostile-Extd-Black.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: block; /* Changed to block to avoid FOUT */
