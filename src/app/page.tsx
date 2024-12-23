@@ -16,7 +16,12 @@ export default function Home() {
       {/* Next Stream Section */}
       <section className="mb-12 w-full text-center">
         <div className="mx-auto w-1/2">
-          <h2 className="text-2xl md:text-3xl font-bold mb-2">NEXT STREAM</h2>
+          <div className="text-xl md:text-2xl text-destructive font-bold mb-2">
+            STREAMS ON LAST SATURDAY OF EVERY MONTH
+          </div>
+          <h2 className="text-xl md:text-2xl mt-10 font-bold mb-2">
+            NEXT STREAM
+          </h2>
           <DateNextStream />
           <div className="flex justify-center">
             <TwitchButton />

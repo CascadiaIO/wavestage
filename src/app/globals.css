@@ -47,7 +47,7 @@
   src: url("/fonts/Eurostile-Extd-black.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
-  font-display: swap;
+  font-display: block; /* Changed to block to avoid FOUT */
 }
 
 .wavestage-header {
