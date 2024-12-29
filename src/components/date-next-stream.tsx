@@ -9,6 +9,7 @@ export default function DateNextStream() {
 
   // Get the last Saturday of the current month
   const lastSaturday = getLastSaturdayOfMonth(year, month);
+  console.log(lastSaturday);
 
   return (
     <div className="text-xl md:text-2xl mb-6">
