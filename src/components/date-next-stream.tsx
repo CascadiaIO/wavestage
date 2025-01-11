@@ -13,7 +13,7 @@ export default function DateNextStream() {
 
   return (
     <div className="text-xl md:text-2xl mb-6">
-      Saturday, Jan 25th <br />
+      Saturday, Jan 18th <br />
       7:00 PM EST
     </div>
   );
