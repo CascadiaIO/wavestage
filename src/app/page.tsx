@@ -52,7 +52,10 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="mt-auto text-center text-sm ">© 2025 WaveStage</footer>
+      <footer className="mt-auto text-center text-sm ">
+        <p>© 2025 WaveStage</p>
+        <p>Punch Nazis</p>
+      </footer>
     </div>
   );
 }
