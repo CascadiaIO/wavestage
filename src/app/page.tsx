@@ -1,5 +1,6 @@
 /** @format */
 
+import { BSkyButton } from "@/components/bluesky-button";
 import DateNextStream from "@/components/date-next-stream";
 import { TwitchButton } from "@/components/twitch-button";
 import WavestageHeader from "@/components/wavestage-header";
@@ -9,22 +10,27 @@ export default function Home() {
   return (
     <div className={cn("min-h-screen p-4 md:p-6")}>
       {/* Hero Section */}
-      <header className="mb-5 mt-12 md:mt-4 text-center">
+      <header className="mb-5 mt-4 md:mt-4 text-center">
         <WavestageHeader />
       </header>
 
       {/* Next Stream Section */}
-      <section className="mb-12 w-full text-center">
+      <section className="mb-8 w-full text-center">
         <div className="mx-auto w-1/2">
           <div className="text-xl md:text-2xl text-destructive font-bold mb-2">
-            STREAMS ON LAST SATURDAY OF EVERY MONTH
+            Streaming 3rd Saturday of the month
           </div>
-          <h2 className="text-xl md:text-2xl mt-10 font-bold mb-2">
+          <h2 className="text-xl md:text-2xl mt-5 font-bold mb-2">
             NEXT STREAM
+            <DateNextStream />
           </h2>
-          <DateNextStream />
-          <div className="flex justify-center">
+        </div>
+      </section>
+      <section className="mb-12 w-full text-center">
+        <div className="mx-auto w-3/4">
+          <div className="flex justify-center gap-2">
             <TwitchButton />
+            <BSkyButton />
           </div>
         </div>
       </section>
@@ -46,7 +52,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="mt-auto text-center text-sm ">© 2024 WaveStage</footer>
+      <footer className="mt-auto text-center text-sm ">© 2025 WaveStage</footer>
     </div>
   );
 }

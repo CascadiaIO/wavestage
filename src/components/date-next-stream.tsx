@@ -11,10 +11,5 @@ export default function DateNextStream() {
   const lastSaturday = getLastSaturdayOfMonth(year, month);
   console.log(lastSaturday);
 
-  return (
-    <div className="text-xl md:text-2xl mb-6">
-      Saturday, Jan 18th <br />
-      7:00 PM EST
-    </div>
-  );
+  return <div className="text-xl md:text-2xl mb-6">April 19th @ 7PM EST</div>;
 }
