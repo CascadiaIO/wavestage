@@ -53,7 +53,7 @@
 .wavestage-header {
   font-family: "Eurostile", sans-serif;
   font-weight: bold;
-  @apply text-[#A2D729];
+  /* @apply text-[#A2D729]; */
 }
 
 @layer base {
