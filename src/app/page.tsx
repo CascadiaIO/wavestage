@@ -4,13 +4,12 @@ import { BSkyButton } from "@/components/bluesky-button";
 import DateNextStream from "@/components/date-next-stream";
 import { TwitchButton } from "@/components/twitch-button";
 import WavestageHeader from "@/components/wavestage-header";
-import { cn } from "@/lib/utils";
 
 export default function Home() {
   return (
-    <div className={cn("min-h-screen p-4 md:p-6")}>
+    <main className="min-h-screen p-2 md:p-6 flex flex-col">
       {/* Hero Section */}
-      <header className="mb-5 mt-4 md:mt-4 text-center">
+      <header className="mb-5 mt-4 md:mt-4 text-center w-full">
         <WavestageHeader />
       </header>
 
@@ -36,7 +35,15 @@ export default function Home() {
       </section>
 
       {/* Video Section */}
-      <section className="max-w-2xl mx-auto mb-12">
+      <section className="mx-auto mb-12 w-3/4 aspect-video">
+        <iframe
+          className="w-full h-full rounded-lg"
+          src="https://www.youtube.com/embed/o0O1Rdx7Rbk"
+          title="WaveStage Sample Video"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen></iframe>
+      </section>
+      {/* <section className="max-w-2xl mx-auto mb-12">
         <div className="relative w-full" style={{ paddingTop: "56.25%" }}>
           <div className="absolute inset-0 rounded-lg flex items-center justify-center">
             <iframe
@@ -49,13 +56,13 @@ export default function Home() {
               allowFullScreen></iframe>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Footer */}
-      <footer className="mt-auto text-center text-sm ">
+      <footer className="text-center mt-auto text-sm ">
         <p>© 2025 WaveStage</p>
         <p>Punch Nazis</p>
       </footer>
-    </div>
+    </main>
   );
 }
