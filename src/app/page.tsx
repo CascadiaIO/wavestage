@@ -39,11 +39,11 @@ export default function Home() {
 
       <section className="mx-auto mb-12 w-3/4">
         <Image
-          className="w-full rounded-lg"
+          className="w-full rounded-lg md:px-10"
           src="/images/The_Substrance_Poster_mini.jpg"
           alt="The Substrance Poster"
-          width={800}
-          height={600}
+          width={1000}
+          height={937}
         />
       </section>
 
