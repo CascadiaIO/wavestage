@@ -4,6 +4,7 @@ import { BSkyButton } from "@/components/bluesky-button";
 import DateNextStream from "@/components/date-next-stream";
 import { TwitchButton } from "@/components/twitch-button";
 import WavestageHeader from "@/components/wavestage-header";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -35,27 +36,24 @@ export default function Home() {
       </section>
 
       {/* Video Section */}
-      <section className="mx-auto mb-12 w-3/4 aspect-video">
+
+      <section className="mx-auto mb-12 w-3/4">
+        <Image
+          className="w-full rounded-lg"
+          src="/images/The_Substrance_Poster_V3.jpg"
+          alt="The Substrance Poster"
+          width={800}
+          height={600}
+        />
+      </section>
+
+      {/* <section className="mx-auto mb-12 w-3/4 aspect-video">
         <iframe
           className="w-full h-full rounded-lg"
           src="https://www.youtube.com/embed/o0O1Rdx7Rbk"
           title="WaveStage Sample Video"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen></iframe>
-      </section>
-      {/* <section className="max-w-2xl mx-auto mb-12">
-        <div className="relative w-full" style={{ paddingTop: "56.25%" }}>
-          <div className="absolute inset-0 rounded-lg flex items-center justify-center">
-            <iframe
-              width="100%"
-              height="100%"
-              // src="https://www.youtube.com/embed/12FRLGxYXyk"
-              src="https://www.youtube.com/embed/o0O1Rdx7Rbk"
-              title="WaveStage Sample Video"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen></iframe>
-          </div>
-        </div>
       </section> */}
 
       {/* Footer */}
