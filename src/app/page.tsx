@@ -40,7 +40,7 @@ export default function Home() {
       <section className="mx-auto mb-12 w-3/4">
         <Image
           className="w-full rounded-lg"
-          src="/images/The_Substrance_Poster_V3.jpg"
+          src="/images/The_Substrance_Poster_mini.jpg"
           alt="The Substrance Poster"
           width={800}
           height={600}
